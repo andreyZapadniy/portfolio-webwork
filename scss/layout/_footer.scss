@@ -1,0 +1,184 @@
+.footer {
+  background: #273a43;
+  padding: 60px 0 65px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__main {
+    width: 210px;
+    @media screen and (max-width: 480px) {
+      width: 165px;
+    }
+    &:nth-child(1) {
+      @media screen and (max-width: 768px) {
+        margin: 0 40px 20px;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 0 20px 20px;
+      }
+    }
+    &:nth-child(2) {
+      @media screen and (max-width: 768px) {
+        margin: 0 40px 20px;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 0 20px 20px;
+      }
+    }
+    &:nth-child(3) {
+      @media screen and (max-width: 768px) {
+        margin: 0 25px;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 0 15px;
+      }
+    }
+    &:nth-child(4) {
+      @media screen and (max-width: 768px) {
+        margin: 0 25px;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 0 15px;
+      }
+    }
+    &_width {
+      width: 240px;
+      @media screen and (max-width: 480px) {
+        width: 175px;
+      }
+    }
+  }
+  &__list {
+    margin-top: 20px;
+  }
+  &__contact {
+    font-size: 13.5px;
+    color: #fff;
+    padding: 0 0 10px 35px;
+    position: relative;
+    &_icon1,
+    &_icon2,
+    &_icon3 {
+      &:before {
+        position: absolute;
+        left: 4px;
+      }
+    }
+    &_icon1:before {
+      content: url("../img/address.png");
+    }
+    &_icon2:before {
+      content: url("../img/messej.png");
+      left: 0;
+    }
+    &_icon3:before {
+      content: url("../img/tell.png");
+      // left: -2px;
+    }
+  }
+  &__link-comment {
+    display: block;
+    margin-top: 5px;
+    color: #6db0ce;
+  }
+  &__form {
+    display: flex;
+    height: 35px;
+  }
+  &__email {
+    padding: 12px 0 12px 15px;
+    background: #172227;
+    border-radius: 5px 0 0 5px;
+    width: 157px;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  &__button {
+    width: 43px;
+    background: #71b6d5;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    padding-left: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .subtitle {
+    font-size: 13.5px;
+    color: rgb(196, 196, 196);
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+    &_padding {
+      padding-left: 40px;
+      position: relative;
+      &:before {
+        content: url("../img/twitt.png");
+        position: absolute;
+        top: 5px;
+        left: 0;
+      }
+    }
+  }
+  .head {
+    color: #fff;
+    margin: 6px 0 0;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+.socials {
+  background: #172227;
+  .container {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 13.5px;
+    color: rgb(196, 196, 196);
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+  &__icon {
+    padding-top: 10px;
+  }
+  &__link1,
+  &__link2,
+  &__link3 {
+    padding: 5px 15px;
+    border-radius: 50%;
+    background: #2c3b42;
+    position: relative;
+    transition: background 0.4s;
+    &:hover {
+      background: #71b6d5;
+    }
+    &:before {
+      position: absolute;
+      top: 20%;
+      left: 7px;
+    }
+  }
+  &__link2 {
+    margin: 0 5px;
+  }
+  &__link1:before {
+    content: url("../img/twitter.png");
+  }
+  &__link2:before {
+    content: url("../img/facebook.png");
+    left: 35%;
+  }
+  &__link3:before {
+    content: url("../img/in.png");
+  }
+}

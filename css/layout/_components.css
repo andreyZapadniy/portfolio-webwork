@@ -1,0 +1,11 @@
+.wraper {
+  overflow: hidden;
+  width: 100%;
+  position: relative; }
+
+.container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 5px;
+  position: relative; }
